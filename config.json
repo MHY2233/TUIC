@@ -1,0 +1,21 @@
+{
+    "server": "[::]:8443",
+    "users": {
+"1339b0ae-8025-4c76-9b8c-34a6cf63bdbf": "5NbI4QytgInFGX2Q"
+    },
+    "certificate": "/etc/letsencrypt/live/yourdomain.com/fullchain.pem",
+    "private_key": "/etc/letsencrypt/live/yourdomain.com/private.pem",
+    "congestion_control": "bbr",
+    "alpn": ["h3", "spdy/3.1"],
+    "udp_relay_ipv6": false,
+    "zero_rtt_handshake": true,
+    "dual_stack": true,
+    "auth_timeout": "3s",
+    "task_negotiation_timeout": "3s",
+    "max_idle_time": "10s",
+    "max_external_packet_size": 1500,
+    "send_window": 16777216,
+    "receive_window": 8388608,
+    "gc_interval": "3s",
+    "gc_lifetime": "15s",
+    "log_level": "info"
