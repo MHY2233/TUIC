@@ -50,8 +50,8 @@ certbot certonly -d yourdomain.com   --standalone
     "users": {
 "1339b0ae-8025-4c76-9b8c-34a6cf63bdbf": "5NbI4QytgInFGX2Q"
     },
-    "certificate": "/usr/local/etc/tuic/fullchain.crt",
-    "private_key": "/usr/local/etc/tuic/private.key",
+    "certificate": "/etc/letsencrypt/live/yourdomain.com/fullchain.pem",
+    "private_key": "/etc/letsencrypt/live/yourdomain.com/private.pem",
     "congestion_control": "bbr",
     "alpn": ["h3"],
     "udp_relay_ipv6": false,
