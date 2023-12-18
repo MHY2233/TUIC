@@ -7,10 +7,10 @@
 
         curl -Lo tuic-server https://github.com/EAimTY/tuic/releases/latest/download/tuic-server-1.0.0-x86_64-unknown-linux-gnu && chmod +x tuic-server && mv -f tuic-server /usr/local/bin/
 
-- 2.下载配置文件
+- 下载配置文件
 
         mkdir /usr/local/etc/tuic && curl -Lo /usr/local/etc/tuic/config.json https://raw.githubusercontent.com/MHY2233/TUIC/main/config.json
-- 3.下载service文件
+- 下载service文件
 
         curl -Lo /etc/systemd/system/tuic-server.service https://raw.githubusercontent.com/MHY2233/TUIC/main/tuic.service && systemctl daemon-reload
 
