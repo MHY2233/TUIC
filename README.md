@@ -5,7 +5,7 @@
 
 - 2.下载配置文件
 
-        mkdir /usr/local/etc/tuic && curl -Lo /usr/local/etc/tuic/config.json https://raw.githubusercontent.com/chika0801/tuic-install/main/config_server.json
+        mkdir /usr/local/etc/tuic && curl -Lo /usr/local/etc/tuic/config.json https://raw.githubusercontent.com/MHY2233/TUIC/main/config.json
 - 3.下载service文件
 
         curl -Lo /etc/systemd/system/tuic-server.service https://raw.githubusercontent.com/chika0801/tuic-install/main/tuic-server.service && systemctl daemon-reload
