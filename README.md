@@ -13,9 +13,9 @@
 
       certbot renew
 ### 安装tuic
-- 1.从github(https://github.com/EAimTY/tuic/releases) 下载对应操作系统和cpu架构的tuic二进制文件，然后放到服务器上面，比如/usr/local/bin/tuic
+> 1.从github(https://github.com/EAimTY/tuic/releases) 下载对应操作系统和cpu架构的tuic二进制文件，然后放到服务器上面，比如/usr/local/bin/tuic
 
-- 2.添加配置文件/etc/tuic/config.json，内容如下：
+> 2.添加配置文件/etc/tuic/config.json，内容如下：
 
 ```bash
 {
