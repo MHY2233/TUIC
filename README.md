@@ -2,7 +2,7 @@
 
 > QUIC 协议汲取了大量人们给 TCP 糊墙的经验教训，把连接结构优化到（目前来看）极致。TUIC是一个基于 QUIC 协议的新代理工具: TUIC。这个工具可以实现的功能如下:
 
-1.1-RTT TCP 中继
+>> 1.1-RTT TCP 中继
 
 2.0-RTT UDP 中继，且 NAT 类型为 FullCone
 
