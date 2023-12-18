@@ -8,6 +8,8 @@
         mkdir /usr/local/etc/tuic && curl -Lo /usr/local/etc/tuic/config.json https://raw.githubusercontent.com/chika0801/tuic-install/main/config_server.json
 - 3.下载service文件
 
+        curl -Lo /etc/systemd/system/tuic-server.service https://raw.githubusercontent.com/chika0801/tuic-install/main/tuic-server.service && systemctl daemon-reload
+
 ### 开启tuic
     systemctl start tuic
 ### 设置tuic开机自启
