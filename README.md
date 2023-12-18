@@ -39,3 +39,32 @@ certbot certonly -d yourdomain.com   --standalone
   certbot again. To non-interactively renew *all* of your
   certificates, run "certbot renew"
 ```
+### 安装tuic
+- 1.从github(https://github.com/EAimTY/tuic/releases) 下载对应操作系统和cpu架构的tuic二进制文件，然后放到服务器上面，比如/usr/local/bin/tuic
+
+- 2.添加配置文件/etc/tuic/config.json，内容如下：
+
+```bash
+{
+    "server": "[::]:8443",
+    "users": {
+"1339b0ae-8025-4c76-9b8c-34a6cf63bdbf": "5NbI4QytgInFGX2Q"
+    },
+    "certificate": "/usr/local/etc/tuic/fullchain.crt",
+    "private_key": "/usr/local/etc/tuic/private.key",
+    "congestion_control": "bbr",
+    "alpn": ["h3"],
+    "udp_relay_ipv6": false,
+    "zero_rtt_handshake": true,
+    "dual_stack": true,
+    "auth_timeout": "3s",
+    "task_negotiation_timeout": "3s",
+    "max_idle_time": "10s",
+    "max_external_packet_size": 1500,
+    "send_window": 16777216,
+    "receive_window": 8388608,
+    "gc_interval": "3s",
+    "gc_lifetime": "15s",
+    "log_level": "info"
+}
+```
