@@ -15,13 +15,9 @@
 
         curl -Lo /etc/systemd/system/tuic-server.service https://raw.githubusercontent.com/MHY2233/TUIC/main/tuic.service && systemctl daemon-reload
 
-- 开启tuic
+- 启动tuic
 
-        systemctl start tuic
-
-- 设置tuic开机自启
-
-        systemctl enable tuic
+        systemctl enable --now tuic-server
 
 - 重启tuic
 
