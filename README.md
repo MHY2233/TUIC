@@ -10,15 +10,23 @@
 - 下载配置文件
 
         mkdir /usr/local/etc/tuic && curl -Lo /usr/local/etc/tuic/config.json https://raw.githubusercontent.com/MHY2233/TUIC/main/config.json
+
 - 下载service文件
 
         curl -Lo /etc/systemd/system/tuic-server.service https://raw.githubusercontent.com/MHY2233/TUIC/main/tuic.service && systemctl daemon-reload
 
-### 开启tuic
-    systemctl start tuic
-### 设置tuic开机自启
-    systemctl enable tuic
-### 重启tuic
-    systemctl restart tuic
-### 查看tuic状态
-    systemctl status tuic
+- 开启tuic
+
+        systemctl start tuic
+
+- 设置tuic开机自启
+
+        systemctl enable tuic
+
+- 重启tuic
+
+        systemctl restart tuic
+
+- 查看tuic状态
+
+        systemctl status tuic
