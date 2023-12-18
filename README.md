@@ -5,8 +5,7 @@
 
 - 2.下载配置文件
 
-        mkdir /usr/local/etc/tuic/ && wget https://github.com/MHY2233/TUIC/blob/main/config.json -O /usr/local/etc/tuic/config.json
-
+        mkdir /usr/local/etc/tuic && curl -Lo /usr/local/etc/tuic/config.json https://raw.githubusercontent.com/chika0801/tuic-install/main/config_server.json
 - 3.下载service文件
 
 ### 开启tuic
