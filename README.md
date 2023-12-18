@@ -68,3 +68,28 @@ certbot certonly -d yourdomain.com   --standalone
     "log_level": "info"
 }
 ```
+- 3.添加service文件/etc/systemd/system/tuic.service，内容如下：
+```bash
+[Unit]
+After=network.target nss-lookup.target
+
+[Service]
+User=root
+CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_BIND_SERVICE CAP_NET_RAW
+AmbientCapabilities=CAP_NET_ADMIN CAP_NET_BIND_SERVICE CAP_NET_RAW
+ExecStart=/usr/local/bin/tuic -c /etc/tuic/config.json
+Restart=on-failure
+RestartSec=10
+LimitNOFILE=infinity
+
+[Install]
+WantedBy=multi-user.target
+```
+### 开启tuic
+  systemctl start tuic
+### 设置tuic开机自启
+  systemctl enable tuic
+### 重启tuic
+  systemctl restart tuic
+### 查看tuic状态
+  systemctl status tuic
