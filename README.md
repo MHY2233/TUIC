@@ -5,19 +5,13 @@
 
       apt install certbot
 
-- 3.申请证书, 在你的服务器上面运行下面的命令，前提是要把80和443的端口占用程序先暂停掉，否则会报错。运行下面的命令会让你输入邮箱，主要用来通知过期时间的。
-```bash
-certbot certonly -d yourdomain.com   --standalone
+- 2.申请证书
 
- - Congratulations! Your certificate and chain have been saved at:
-  /etc/letsencrypt/live/yourdomain.com/fullchain.pem
-  Your key file has been saved at:
-  /etc/letsencrypt/live/yourdomain.com/privkey.pem
-  Your certificate will expire on 2023-07-15. To obtain a new or
-  tweaked version of this certificate in the future, simply run
-  certbot again. To non-interactively renew *all* of your
-  certificates, run "certbot renew"
-```
+      certbot certonly -d yourdomain.com   --standalone
+
+- 3.更新证书
+
+      certbot renew
 ### 安装tuic
 - 1.从github(https://github.com/EAimTY/tuic/releases) 下载对应操作系统和cpu架构的tuic二进制文件，然后放到服务器上面，比如/usr/local/bin/tuic
 
@@ -72,8 +66,3 @@ WantedBy=multi-user.target
     systemctl restart tuic
 ### 查看tuic状态
     systemctl status tuic
-
-# 文章转载自 
-## [Payne Fu](https://beyondkmp.com/about)  
-
-## [原文链接](https://beyondkmp.com/2023/04/16/tuic-config/)
