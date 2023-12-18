@@ -1,8 +1,9 @@
 
 ### 申请域名和证书
-- 1.因为QUIC是基于tls的，我们可以先去申请一个域名，可以去cloudflare或者namecheap上面买一个最便宜的，或者去https://freenom.com 注册一个免费域名。然后将域名解析到你的服务器ip上面。
 
-- 2.安装certbot, 这个是可以免费申请https证书的工具, 在最新的debian11上面可以用命令`apt install certbot`安装。
+- 1.安装certbot
+
+      apt install certbot
 
 - 3.申请证书, 在你的服务器上面运行下面的命令，前提是要把80和443的端口占用程序先暂停掉，否则会报错。运行下面的命令会让你输入邮箱，主要用来通知过期时间的。
 ```bash
