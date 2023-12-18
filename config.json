@@ -6,7 +6,7 @@
     "certificate": "/usr/local/etc/tuic/fullchain.crt",
     "private_key": "/usr/local/etc/tuic/private.key",
     "congestion_control": "bbr",
-    "alpn": ["h3", "spdy/3.1"],
+    "alpn": ["h3"],
     "udp_relay_ipv6": false,
     "zero_rtt_handshake": true,
     "dual_stack": true,
