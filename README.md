@@ -5,7 +5,7 @@
 
      或者
 
-        curl -Lo tuic-server https://github.com/EAimTY/tuic/releases/latest/download/tuic-server-1.0.0-x86_64-unknown-linux-gnu && chmod +x tuic-server && mv -f tuic-server /usr/local/bin/
+        curl -Lo tuic https://github.com/EAimTY/tuic/releases/latest/download/tuic-server-1.0.0-x86_64-unknown-linux-gnu && chmod +x tuic&& mv -f tuic /usr/local/bin/
 
 - 下载配置文件
 
