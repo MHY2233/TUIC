@@ -22,6 +22,20 @@
 # 安装
 ## 服务器端
 ### 申请域名和证书
-1.因为QUIC是基于tls的，我们可以先去申请一个域名，可以去cloudflare或者namecheap上面买一个最便宜的，或者去https://freenom.com 注册一个免费域名。然后将域名解析到你的服务器ip上面。
+- 1.因为QUIC是基于tls的，我们可以先去申请一个域名，可以去cloudflare或者namecheap上面买一个最便宜的，或者去https://freenom.com 注册一个免费域名。然后将域名解析到你的服务器ip上面。
 
-2.安装certbot, 这个是可以免费申请https证书的工具, 在最新的debian11上面可以用命令`apt install certbot`安装。
+- 2.安装certbot, 这个是可以免费申请https证书的工具, 在最新的debian11上面可以用命令`apt install certbot`安装。
+
+- 3.申请证书, 在你的服务器上面运行下面的命令，前提是要把80和443的端口占用程序先暂停掉，否则会报错。运行下面的命令会让你输入邮箱，主要用来通知过期时间的。
+```bash
+certbot certonly -d yourdomain.com   --standalone
+
+ - Congratulations! Your certificate and chain have been saved at:
+  /etc/letsencrypt/live/yourdomain.com/fullchain.pem
+  Your key file has been saved at:
+  /etc/letsencrypt/live/yourdomain.com/privkey.pem
+  Your certificate will expire on 2023-07-15. To obtain a new or
+  tweaked version of this certificate in the future, simply run
+  certbot again. To non-interactively renew *all* of your
+  certificates, run "certbot renew"
+```
