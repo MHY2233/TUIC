@@ -86,10 +86,10 @@ LimitNOFILE=infinity
 WantedBy=multi-user.target
 ```
 ### 开启tuic
-  systemctl start tuic
+    systemctl start tuic
 ### 设置tuic开机自启
-  systemctl enable tuic
+    systemctl enable tuic
 ### 重启tuic
-  systemctl restart tuic
+    systemctl restart tuic
 ### 查看tuic状态
-  systemctl status tuic
+    systemctl status tuic
