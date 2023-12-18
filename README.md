@@ -27,6 +27,6 @@
 
         systemctl status tuic
 
-|项目|      |
-|---|---|
+| 项目 |                       |
+|----|----|
 |程序|/usr/local/bin/tuic|
