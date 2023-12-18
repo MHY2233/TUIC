@@ -3,6 +3,10 @@
 
         wget https://github.com/EAimTY/tuic/releases/download/tuic-server-1.0.0/tuic-server-1.0.0-x86_64-unknown-linux-gnu && mv tuic-server-1.0.0-x86_64-unknown-linux-gnu /usr/local/bin/tuic && chmod +x /usr/local/bin/tuic
 
+或者
+
+        curl -Lo tuic-server https://github.com/EAimTY/tuic/releases/latest/download/tuic-server-1.0.0-x86_64-unknown-linux-gnu && chmod +x tuic-server && mv -f tuic-server /usr/local/bin/
+
 - 2.下载配置文件
 
         mkdir /usr/local/etc/tuic && curl -Lo /usr/local/etc/tuic/config.json https://raw.githubusercontent.com/MHY2233/TUIC/main/config.json
