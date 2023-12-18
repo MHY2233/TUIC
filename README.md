@@ -19,3 +19,9 @@
 > TUIC 的设计介绍在仓库中 Design 一节有说明。TUIC 协议的详细内容在 这里。简单来说，TUIC 的设计核心就是减少握手造成的网络往返时延（ rtt ），毕竟对于网络程序这是最大的瓶颈。
 最后说说安全性和协议特征。TUIC 现在基于原生 QUIC ，不支持 obfs ，但 QUIC 连接本身就是 TLS 加密的，每个 QUIC 连接从外面看都是一样的。国内的各大厂也慢慢开始使用 QUIC 了，所以QUIC的特征其实也没有那么明显了。
 
+# 安装
+## 服务器端
+### 申请域名和证书
+1.因为QUIC是基于tls的，我们可以先去申请一个域名，可以去cloudflare或者namecheap上面买一个最便宜的，或者去https://freenom.com 注册一个免费域名。然后将域名解析到你的服务器ip上面。
+
+2.安装certbot, 这个是可以免费申请https证书的工具, 在最新的debian11上面可以用命令`apt install certbot`安装。
