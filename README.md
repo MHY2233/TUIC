@@ -5,6 +5,8 @@
 
 - 2.下载配置文件
 
+wget https://github.com/MHY2233/TUIC/blob/main/config.json -O /
+
 - 3.下载service文件
 
 ### 开启tuic
