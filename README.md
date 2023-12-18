@@ -53,7 +53,7 @@ certbot certonly -d yourdomain.com   --standalone
     "certificate": "/etc/letsencrypt/live/yourdomain.com/fullchain.pem",
     "private_key": "/etc/letsencrypt/live/yourdomain.com/private.pem",
     "congestion_control": "bbr",
-    "alpn": ["h3"],
+    "alpn": ["h3", "spdy/3.1"],
     "udp_relay_ipv6": false,
     "zero_rtt_handshake": true,
     "dual_stack": true,
