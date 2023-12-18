@@ -1,17 +1,3 @@
-
-### 申请域名和证书
-
-- 1.安装certbot
-
-      apt install certbot
-
-- 2.申请证书
-
-      certbot certonly -d yourdomain.com   --standalone
-
-- 3.更新证书
-
-      certbot renew
 ### 安装tuic
 - 1.下载程序
 
