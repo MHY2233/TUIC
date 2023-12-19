@@ -17,7 +17,7 @@
 
 - 启动tuic
 
-        systemctl enable --now tuic-server
+        systemctl enable --now tuic
 
 - 重启tuic
 
