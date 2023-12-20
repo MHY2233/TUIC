@@ -13,7 +13,7 @@
 
 - **下载service文件**
 
-        curl -Lo /etc/systemd/system/tuic-server.service https://raw.githubusercontent.com/MHY2233/TUIC/main/tuic.service && systemctl daemon-reload
+        curl -Lo /etc/systemd/system/tuic.service https://raw.githubusercontent.com/MHY2233/TUIC/main/tuic.service && systemctl daemon-reload
 
 - **启动tuic**
 
