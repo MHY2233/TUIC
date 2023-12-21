@@ -27,4 +27,12 @@
 
         systemctl status tuic
 
+- **查看日志**
+
+        journalctl -u tuic -o cat -e
+
+- **实时日志**
+
+        journalctl -u trojan-go -o cat -f
+
 
