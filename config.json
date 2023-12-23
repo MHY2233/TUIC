@@ -1,7 +1,7 @@
 {
     "server": "[::]:8443",
     "users": {
-"1339b0ae-8025-4c76-9b8c-34a6cf63bdbf": "Gh6ZFxX6R8dyyJ$M"
+"018c9516-8a12-7a17-95ac-4945db4fc9eb": "Gh6ZFxX6R8dyyJ$M"
     },
     "certificate": "/usr/local/etc/tuic/fullchain.cer",
     "private_key": "/usr/local/etc/tuic/private.key",
