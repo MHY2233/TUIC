@@ -1,10 +1,10 @@
 {
-    "server": "[::]:8443",
+    "server": "[::]:443",
     "users": {
 "018c9516-8a12-7a17-95ac-4945db4fc9eb": "Gh6ZFxX6R8dyyJ$M"
     },
-    "certificate": "/usr/local/etc/tuic/fullchain.cer",
-    "private_key": "/usr/local/etc/tuic/private.key",
+    "certificate": "/usr/local/etc/ssl/fullchain.cer",
+    "private_key": "/usr/local/etc/ssl/private.key",
     "congestion_control": "bbr",
     "alpn": ["h3"],
     "udp_relay_ipv6": false,
