@@ -1,3 +1,4 @@
+# [最新发行版](https://github.com/EAimTY/tuic/releases)
 
 - **下载程序**
 
